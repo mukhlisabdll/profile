@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda - Mukhlis Abdillah</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Mukhlis Abdillah</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang Saya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile-section container my-5 text-center">
+      <img
+        src="assets/profile.jpg"
+        alt="Foto Mukhlis Abdillah"
+        class="profile-img rounded-circle mb-3"
+      />
+      <h1>Selamat Datang di Profil Mukhlis Abdillah</h1>
+      <p class="lead">
+        Siswa RPL di SMK Antartika 1 Sidoarjo, bercita-cita menjadi Data
+        Scientist
+      </p>
+      <button class="btn btn-primary" onclick="toggleMoreInfo()">
+        Lihat Info Lainnya
+      </button>
+
+      <!-- Additional Information Section (Hidden by Default) -->
+      <div id="more-info" class="mt-4 d-none">
+        <p>Jurusan: Rekayasa Perangkat Lunak</p>
+        <p>Sekolah: SMK Antartika 1 Sidoarjo</p>
+        <p>Umur: 17 tahun</p>
+        <div class="social-links mt-3">
+          <a
+            href="https://github.com/mukhlisabdll"
+            class="btn btn-outline-dark btn-sm mx-1"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://instagram.com/mukhlisabdll"
+            class="btn btn-outline-dark btn-sm mx-1"
+            target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+/* Gaya Umum */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(270deg, #001f3f, #000000, #333333, #0056b3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  margin: 0;
+  color: #fff; /* Menambahkan warna teks putih secara global */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Navbar */
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Profil Section */
+.profile-section {
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.profile-section h1 {
+  font-size: 2.5rem;
+  color: #fff; /* Mengubah warna teks menjadi putih agar kontras dengan latar belakang */
+}
+
+.profile-section .lead {
+  font-size: 1.25rem;
+  color: #f8f9fa; /* Warna teks terang agar lebih mudah dibaca */
+}
+
+/* Additional Information */
+#more-info p {
+  font-size: 1.1rem;
+  color: #f8f9fa; /* Menyesuaikan warna teks agar terlihat kontras dengan latar belakang */
+}
+
+/* Card */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar */
+.progress-bar {
+  font-weight: bold;
+  color: #fff; /* Menyesuaikan warna teks pada progress bar agar kontras */
+}
+
+/* Tautan Sosial (GitHub dan Instagram) */
+.social-links .btn {
+  border-color: #fff; /* Mengubah warna border menjadi putih */
+  color: #fff; /* Mengubah warna teks menjadi putih */
+}
+
+.social-links .btn:hover {
+  background-color: #fff; /* Mengubah latar belakang tombol saat hover menjadi putih */
+  color: #000; /* Mengubah warna teks menjadi hitam saat hover agar kontras */
+}
