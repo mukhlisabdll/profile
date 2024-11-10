@@ -9,6 +9,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* CSS untuk menempatkan pemutar musik di sudut kanan bawah */
+      .audio-player {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -48,8 +57,7 @@
       />
       <h1>Selamat Datang di Profil Mukhlis Abdillah</h1>
       <p class="lead">
-        Siswa RPL di SMK Antartika 1 Sidoarjo, bercita-cita menjadi Data
-        Scientist
+        Pelajar dengan ketertarikan pada pemrograman dan analisis data.
       </p>
       <button class="btn btn-primary" onclick="toggleMoreInfo()">
         Lihat Info Lainnya
@@ -57,9 +65,9 @@
 
       <!-- Additional Information Section (Hidden by Default) -->
       <div id="more-info" class="mt-4 d-none">
-        <p>Jurusan: Rekayasa Perangkat Lunak</p>
-        <p>Sekolah: SMK Antartika 1 Sidoarjo</p>
         <p>Umur: 17 tahun</p>
+        <p>Hobi: Mendengarkan musik, bermain game, dan coding</p>
+        <p>Minat: Pemrograman Python, Data Science, dan Pembelajaran Mesin</p>
         <div class="social-links mt-3">
           <a
             href="https://github.com/mukhlisabdll"
@@ -76,6 +84,14 @@
         </div>
       </div>
     </section>
+
+    <!-- Audio Player -->
+    <div class="audio-player">
+      <audio controls autoplay>
+        <source src="assets/music/theSmiths.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
